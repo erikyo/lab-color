@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "allowJs": true,
+    "declaration": true,
+    "declarationDir": "lib",
+    "outDir": "lib"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

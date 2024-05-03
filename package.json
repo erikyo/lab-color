@@ -1,0 +1,31 @@
+{
+	"name": "lab-color",
+	"version": "1.0.0",
+	"description": "Color utility library to convert lab color space with high accuracy.",
+	"license": "MIT",
+	"author": "erikyo <https://github.com/erikyo>",
+	"homepage": "https://github.com/erikyo/gettext-parser-next",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/erikyo/gettext-parser-next.git"
+	},
+	"bugs": {
+		"url": "https://github.com/erikyo/gettext-parser-next/issues"
+	},
+	"engines": {
+		"node": ">=14"
+	},
+	"main": "lib/index.js",
+	"module": "lib/index.js",
+	"sideEffects": false,
+	"files": ["lib", "tests", "*.json", "*.md"],
+	"keywords": ["i18n", "l10n", "gettext", "mo", "po"],
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc --watch",
+		"lint": "npx @biomejs/biome check --apply src test",
+		"test": "node --experimental-vm-modules --experimental-specifier-resolution=node --test",
+		"prepublishOnly": "npm run build"
+	}
+}
