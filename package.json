@@ -1,16 +1,16 @@
 {
 	"name": "lab-color",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Color utility library to convert lab color space with high accuracy.",
 	"license": "ISC",
 	"author": "erikyo <https://github.com/erikyo>",
-	"homepage": "https://github.com/erikyo/gettext-parser-next",
+	"homepage": "https://github.com/erikyo/lab-color",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/erikyo/gettext-parser-next.git"
+		"url": "https://github.com/erikyo/lab-color.git"
 	},
 	"bugs": {
-		"url": "https://github.com/erikyo/gettext-parser-next/issues"
+		"url": "https://github.com/erikyo/lab-color/issues"
 	},
 	"engines": {
 		"node": ">=14"
@@ -19,7 +19,7 @@
 	"module": "lib/index.js",
 	"sideEffects": false,
 	"files": ["lib", "tests", "*.json", "*.md"],
-	"keywords": ["i18n", "l10n", "gettext", "mo", "po"],
+	"keywords": ["color", "lab", "color space", "color space conversion"],
 	"type": "module",
 	"scripts": {
 		"build": "npx tsc",

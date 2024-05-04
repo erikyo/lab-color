@@ -42,52 +42,44 @@ console.log(rgbColor); // { r: 120, g: 180, b: 200 }
 
 Converts an RGB color to a Lab color representation.
 
-#### Arguments:
-
+**Arguments:**
 - `rgb` (`RGB`): An object representing the RGB color with properties `R`, `G`, and `B`, each ranging from 0 to 255.
 - `options` (`OPTIONS`, optional): An optional object containing additional conversion options.
 
-#### Returns:
-
+**Returns:**
 - `LAB`: An object representing the Lab color with properties `L`, `a`, and `b`.
 
 ### `rgbToXyz`
 
 Converts an RGB color to an XYZ color representation.
 
-#### Arguments:
-
+**Arguments:**
 - `rgb` (`RGB`): An object representing the RGB color with properties `R`, `G`, and `B`, each ranging from 0 to 255.
 - `options` (`OPTIONS`, optional): An optional object containing additional conversion options.
 
-#### Returns:
-
+**Returns:**
 - `XYZ`: An object representing the XYZ color with properties `X`, `Y`, and `Z`.
 
 ### `labToRgb`
 
 Converts a Lab color to an RGB color representation.
 
-#### Arguments:
-
+**Arguments:**
 - `lab` (`LAB`): An object representing the Lab color with properties `L`, `a`, and `b`.
 - `options` (`OPTIONS`, optional): An optional object containing additional conversion options.
 
-#### Returns:
-
+**Returns:**
 - `RGB`: An object representing the RGB color with properties `R`, `G`, and `B`, each ranging from 0 to 255.
 
 ### `labToXyz`
 
 Converts a Lab color to an XYZ color representation.
 
-#### Arguments:
-
+**Arguments:**
 - `lab` (`LAB`): An object representing the Lab color with properties `L`, `a`, and `b`.
 - `options` (`OPTIONS`, optional): An optional object containing additional conversion options.
 
-#### Returns:
-
+**Returns:**
 - `XYZ`: An object representing the XYZ color with properties `X`, `Y`, and `Z`.
 
 
@@ -96,21 +88,22 @@ Converts a Lab color to an XYZ color representation.
 When converting to color temperature, there are many different colors that map onto the same color temperature.
 Robertson's method has been implemented to perform this conversion, and if the color temperature field is blank after doing a calculation, that means the color was out of the range that Robertson's method supports. When converting from color temperature, the standard CIE method used is only valid for color temperatures in the range [4000K, 25000K]
 
-  WHITE A, B, C, D50, D55, D65, D75, E, F2, F7, F11
+`A, B, C, D50, D55, D65, D75, E, F2, F7, F11`
 
 - `MODEL`: The color model used to change the colorimetric interpretation of the RGB color values.
 Included in this list are all the RGB working spaces that ship with Adobe Photoshop, as well as several others that have emerged as a result of research efforts from various individuals (details [here](http://www.brucelindbloom.com/WorkingSpaceAuthors.html)).
 
-  AdobeRGB, AppleRGB, BestRGB, BetaRGB, BruceRGB, CI, ColorMatch, DonRGB, ECI_RGB_v2, EktaSpacePS5, NTSC , PAL_SECAM , ProPhoto , SMPTE_C , sRGB , WideGamut
+`AdobeRGB, AppleRGB, BestRGB, BetaRGB, BruceRGB, CI, ColorMatch, DonRGB, ECI_RGB_v2, EktaSpacePS5, NTSC , PAL_SECAM , ProPhoto , SMPTE_C , sRGB , WideGamut`
 
 - `ADAPTATION`: The color adaptation method used to convert the color.
 The differences among the three methods lie in the definition of the cone response domains
 
-  Bradford, von_Kries, XYZ_Scaling, None
+`Bradford, von_Kries, XYZ_Scaling, None`
 
 - `GAMMA`: The gamma correction used to convert the color allowing the native RGB companding function to be overridden.
 This is useful for computing linear RGB values. G1_0,  G1_8,  G2_2 stands for gamma 1.0, 1.8, 2.2 respectively while sRGB and L stands for sRGB and linear respectively
-  G1_0,  G1_8,  G2_2,  sRGB,  L
+
+`G1_0,  G1_8,  G2_2,  sRGB,  L`
 
 ## Examples
 
